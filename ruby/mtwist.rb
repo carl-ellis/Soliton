@@ -1,7 +1,7 @@
-# An implimentation of the Mersenne Twister
+# An implementation of the Mersenne Twister
 class Mtwist
 
-  # Some constants t make up for typeless constraints
+  # Some constants to make up for typeless constraints
   ARRAY_LENGTH = 624
 
   INIT_CONST = 1812433253
@@ -23,7 +23,7 @@ class Mtwist
     end
   end
 
-  # Get a psuedorandom number - state re generated every 624 numbers
+  # Get a psuedorandom number - state re-generated every 624 numbers
   def extract_number
     if @index == 0
       generate_numbers()
@@ -50,6 +50,7 @@ class Mtwist
     end
   end
 
+  # Return a float that is (0,1)
   def rand
     return extract_number / (2**32 -1).to_f
   end
