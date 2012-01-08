@@ -1,4 +1,4 @@
-# An implimentation of tge Mersenne Twister
+# An implimentation of the Mersenne Twister
 class Mtwist
 
   # Some constants t make up for typeless constraints
